@@ -71,6 +71,13 @@ function moreLess(){
 
   window.addEventListener('scroll', function() {
     //console.log('działa przy scrollu');
-    scrollNav.style.borderBottom = '1px solid #7f7f7f' 
+    scrollNav.style.borderBottom = '1px solid #7f7f7f'
   });
+
+  var goUp = document.querySelector(".go-up");
+  console.log(goUp);
+  goUp.addEventListener('click', function(){
+    //console.log("Click działa dla go-up!");
+    window.scroll(0,0);
+  })
 });
