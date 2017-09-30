@@ -31,6 +31,12 @@ nav {
   color: #ea6c56;
 }
 
+/*.navbar {
+  border-bottom-color: black;
+  border-width: 2px;
+  border-style: solid;
+}*/
+
 .nav-list {
   color: #ea6c56;
   font-size: 1.5rem;

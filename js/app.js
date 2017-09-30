@@ -65,4 +65,12 @@ function moreLess(){
   for (var i = 0; i <= moreButtons.length-1; i++){
   moreButtons[i].addEventListener('click', moreLess);
 }
+      //Zadanie 3
+  var scrollNav = document.querySelector(".navbar");
+  console.log(scrollNav);
+
+  window.addEventListener('scroll', function() {
+    //console.log('działa przy scrollu');
+    scrollNav.style.borderBottom = '1px solid #7f7f7f' 
+  });
 });
