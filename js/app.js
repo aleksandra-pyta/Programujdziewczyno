@@ -74,10 +74,20 @@ function moreLess(){
     scrollNav.style.borderBottom = '1px solid #7f7f7f'
   });
 
+      //Zadanie 4
   var goUp = document.querySelector(".go-up");
   console.log(goUp);
   goUp.addEventListener('click', function(){
     //console.log("Click działa dla go-up!");
     window.scroll(0,0);
   })
+
+      //Zadanie 5
+  var carouselItems = document.querySelectorAll(".org")
+  var dots = document.querySelectorAll(".dot")
+
+  console.log(carouselItems);
+  console.log(dots);
+
+
 });
