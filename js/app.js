@@ -42,4 +42,27 @@ document.addEventListener('DOMContentLoaded', function() {
     //console.log('Mouseout works!');
     dropdownLi.style.display = 'none';
     });
-  });
+
+      //Zadanie 2
+
+  var moreButtons = document.querySelectorAll(".read-more");
+  //console.log(moreButtons);
+  //console.log(moreButtons[0].previousElementSibling);
+
+function moreLess(){
+    var details = this.previousElementSibling;
+    //console.log(details);
+    if (details.style.display === 'none' || details.style.display === ''){
+      details.style.display = 'block';
+      //console.log(this.innerHTML);
+      this.innerHTML = 'mniej <span class="glyphicon glyphicon-chevron-up"></span>';
+    } else {
+      details.style.display = 'none';
+      this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
+    }
+  }
+
+  for (var i = 0; i <= moreButtons.length-1; i++){
+  moreButtons[i].addEventListener('click', moreLess);
+}
+});
